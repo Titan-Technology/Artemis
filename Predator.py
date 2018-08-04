@@ -139,8 +139,15 @@ def parse(toks):
             i+=3
    
 def run():
-    data = open_file(argv[1])
-    toks = lex(data)
-    parse(toks)
+    if argv[1].endswith('.hunt'):
+        data = open_file(argv[1])
+        toks = lex(data)
+        parse(toks)
+    elif argv[1].endswith('.prey'):
+        data = open_file(argv[1])
+        toks = lex(data)
+        parse(toks)
+    else:
+        print("Wrong File Extension")
     
 run()
