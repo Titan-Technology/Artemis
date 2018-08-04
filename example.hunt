@@ -1,0 +1,10 @@
+display "gg"
+display "gg"
+$f = "fe"
+display $f
+input "hi" $hd
+display "gg"
+display $hd
+display "gg"
+
+display "gg"
