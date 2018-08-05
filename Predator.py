@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from sys import *
 
 tokens = []
@@ -8,6 +9,7 @@ def open_file(filename):
     data = open(filename, "r").read()
     data += "<EOF>"
     return data
+    
  
 def lex(filecontents):
     tok = ""
